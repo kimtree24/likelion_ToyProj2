@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jua', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.listBox, .addBox {
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.listBox {
+    min-height: 400px;
+}
+
+.addBox {
+    min-height: 150px;
+    padding: 10px;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    height: 6.25em;
+    resize: none;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.modalContainer {
+    background-color: skyblue;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Jua', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buttons {
+    display: flex;
+}
+
+@media all and (max-width: 590px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
